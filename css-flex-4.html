@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            flex-direction: row;
+        }
+        .box{
+            flex-basis: 200px;
+            background-color: #fa0;
+        }
+        .box:nth-of-type(1){
+            background-color: aqua;
+            flex-shrink: 3;
+        }
+        .box:nth-of-type(2){
+            background-color: rgb(33, 6, 189);
+            flex-shrink: 1;
+        }
+        .box:nth-of-type(3){
+            background-color: rgb(47, 236, 9);
+            flex-shrink: 2;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia distinctio voluptate similique laudantium. Repellendus, asperiores? Vel ducimus nesciunt unde culpa hic debitis blanditiis. Deleniti, fuga! Aspernatur obcaecati consequuntur eum veniam.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet coOfficia distinctio voluptate similique laudantium. Repellendus, asperiores? Vel ducimus nesciunt unde culpa hic debitis blanditiis. Deleniti, fuga! Aspernatur obcaecati consequuntur eum veniam.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor selit. Officia distinctio voluptate similique laudantium. Repellendus, asperiores? Vel ducimus nesciunt unde culpa hic debitis blanditiis. Deleniti, fuga! Aspernatur obcaecati consequuntur eum veniam.
+        </div>
+    </div>
+</body>
+</html>
