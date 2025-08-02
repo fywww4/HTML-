@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+        .container{
+            min-width: 1200px;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col{
+            flex: 0 0 50%
+        }
+        @media(min-width:480px){
+            /* h3  {
+                font-size: 64px;
+            } */
+            .container{
+                width: 480px;
+            }
+            /* .col{
+            flex: 0 0 100%
+        } */
+        }
+        @media(min-width:720px){
+            h3 {
+                font-size: 32px;
+            }
+            .container{
+                width: 720px;
+            }
+            .col{
+            flex: 0 0 50%
+        }
+        }
+        @media(min-width:1200px){
+            /* h3 {
+                font-size: 32px;
+            } */
+            .container{
+                width: 1200px;
+            }
+            /* .col{
+            flex: 0 0 50%
+        } */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/id/33/800/600" alt="">
+            </div>
+            <div class="col">
+                <h3>title</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt aspernatur tempora aut fuga corrupti nostrum, aperiam placeat veniam architecto quam aliquam esse, reprehenderit corporis? Impedit quod voluptas harum natus.
+                </p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
