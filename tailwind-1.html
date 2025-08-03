@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    screens: {
+                        'sm':'600',
+                        'xl':'1200',
 
+                    },
+                    extend: {
+                        colors:{
+                            'primary':'#FFC0CB'
+                        }
+                    }
+                }
+            }
+        </script>
 </head>
 <body>
     <!-- <h1 class="text-6xl text-orange-800">hello tailwind</h1> -->
-     <div class="flex flex-warp w-11/12 m-auto xl:bg-sky-300 sm:bg-amber-300 bg-zinc-300">
+     <div class="flex flex-warp w-[1200px] m-auto xl:bg-primary sm:bg-amber-300 bg-zinc-300">
         <div class="xl:w-1/4 sm:w-1/2 w-full p-3">
             <h2 class="text-2xl">title</h2>
             <p>
